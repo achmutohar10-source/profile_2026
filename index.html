@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ach Mutohar | Professional Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --primary:#0f172a;
+  --secondary:#111827;
+  --accent:#6366f1;
+  --accent-soft:#eef2ff;
+  --bg:#f1f5f9;
+  --card:#ffffff;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#f8fafc,#eef2ff);
+  color:var(--primary);
+  line-height:1.7;
+}
+header{
+  background:linear-gradient(135deg,#0f172a,#1e1b4b,#4f46e5);
+  color:#fff;
+  padding:100px 20px 120px;
+  position:relative;
+}
+.header-inner{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:32px;
+  flex-wrap:wrap;
+}
+.header-text{text-align:left}
+@media(max-width:640px){
+  .header-inner{flex-direction:column;text-align:center}
+  .header-text{text-align:center}
+}
+header::after{
+  content:"";
+  position:absolute;
+  bottom:-1px;left:0;right:0;
+  height:70px;
+  background:var(--bg);
+  border-top-left-radius:40px;
+  border-top-right-radius:40px;
+}
+header h1{font-size:clamp(2rem,5vw,2.8rem);font-weight:700}
+header p{margin-top:14px;font-size:clamp(1rem,2.5vw,1.15rem);opacity:.95}
+section{max-width:1200px;margin:auto;padding:clamp(40px,6vw,60px) 20px}
+h2{font-size:1.9rem;margin-bottom:24px;color:var(--secondary)}
+h3{margin-top:18px;font-weight:600}
+.card{
+  background:var(--card);
+  border-radius:20px;
+  padding:clamp(24px,5vw,36px);
+  margin-bottom:36px;
+  box-shadow:0 20px 40px rgba(15,23,42,.08);
+}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.skill-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+}
+.skill-grid-wide{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px 28px;
+}
+@media(max-width:640px){
+  .skill-grid-wide{grid-template-columns:1fr}
+}
+.skill-item{
+  background:var(--accent-soft);
+  padding:14px 16px;
+  border-radius:14px;
+  font-size:.9rem;
+  font-weight:500;
+}
+.tag{
+  display:inline-block;
+  padding:6px 14px;
+  border-radius:999px;
+  background:rgba(99,102,241,.12);
+  color:#3730a3;
+  font-size:.8rem;
+  margin:6px 6px 0 0;
+}
+.highlight-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px 28px;
+}
+@media(max-width:768px){
+  .highlight-grid{grid-template-columns:1fr}
+}
+.highlight-item{
+  background:#ffffff;
+  border-radius:14px;
+  padding:18px 20px;
+  border:1px solid #e5e7eb;
+  box-shadow:none;
+}
+.highlight-item strong{
+  display:block;
+  font-size:.9rem;
+  font-weight:600;
+  color:#111827;
+  margin-bottom:4px;
+}
+.highlight-item span{
+  color:#6b7280;
+  font-size:.85rem;
+  line-height:1.45;
+}
+.highlight-item strong{
+  display:block;
+  font-size:.95rem;
+  font-weight:600;
+  color:#1e1b4b;
+  margin-bottom:8px;
+}
+.highlight-item span{
+  color:#475569;
+  font-size:.88rem;
+  line-height:1.5;
+  max-width:90%;
+}
+.highlight-item strong{
+  display:block;
+  font-size:1rem;
+  font-weight:600;
+  color:var(--secondary);
+  margin-bottom:10px;
+}
+.highlight-item span{
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.55;
+  max-width:92%;
+}
+.highlight-item strong{display:block;font-weight:600;margin-bottom:6px}
+.highlight-item span{color:var(--muted);font-size:.9rem}
+.timeline h3{margin-bottom:4px}
+.timeline p{margin-bottom:14px;color:var(--muted)}
+footer{
+  background:linear-gradient(135deg,#0f172a,#1e1b4b);
+  color:#c7d2fe;
+  text-align:center;
+  padding:40px 20px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div style="max-width:1200px;margin:auto;display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+    <picture style="flex-shrink:0;">
+      <source srcset="assets/profile.webp" type="image/webp">
+      <source srcset="assets/profile.jpg" type="image/jpeg">
+      <img src="assets/profile.jpg" alt="Ach Mutohar" style="width:160px;height:200px;object-fit:cover;border-radius:18px;border:4px solid rgba(255,255,255,.6);box-shadow:0 20px 40px rgba(0,0,0,.25);background:#fff;" loading="lazy" onerror="this.onerror=null;this.src='assets/profile-fallback.jpg';">
+    </picture>
+    <div>
+      <h1 style="text-align:left;">Ach Mutohar</h1>
+      <p style="text-align:left;max-width:640px;">Senior Operational & Senior Kitchen Staff | Operational Excellence | Creative & Business Enthusiast</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="card fade">
+    <h2>Tentang Saya</h2>
+    <p>Adalah individu yang memiliki ketertarikan kuat pada dunia kreatif dan bisnis. Berpengalaman dalam menjalankan serta mengelola beberapa bidang usaha, terbiasa berpikir strategis, inovatif, dan berorientasi pada hasil. Memiliki kemampuan adaptasi yang baik serta semangat untuk terus belajar dan berkembang di lingkungan kerja yang dinamis.</p>
+  </div>
+
+  <div class="card fade">
+    <h2>Highlight Operasional</h2>
+    <div class="highlight-grid">
+  <div class="highlight-item"><strong>Operational Efficiency</strong><span>Optimasi alur kerja</span></div>
+  <div class="highlight-item"><strong>SOP & Compliance</strong><span>Penerapan standar kerja</span></div>
+  <div class="highlight-item"><strong>KPI & Reporting</strong><span>Monitoring & laporan KPI</span></div>
+  <div class="highlight-item"><strong>Team Coordination</strong><span>Koordinasi tim operasional</span></div>
+  <div class="highlight-item"><strong>Quality Control</strong><span>Konsistensi kualitas</span></div>
+  <div class="highlight-item"><strong>Cost Awareness</strong><span>Efisiensi biaya</span></div>
+</div>
+  <div>
+    </div>
+  </div>
+
+  <div class="card fade">
+    <h2>Skill Utama</h2>
+    <div class="skill-grid-wide">
+      <div class="skill-item">Computer Literacy (MS Word, Excel, Google Workspace)</div>
+      <div class="skill-item">Basic Email & WhatsApp Communication</div>
+      <div class="skill-item">Data Entry & Documentation</div>
+      <div class="skill-item">Online Tools & Technology Adaptation</div>
+      <div class="skill-item">Ability to Work Independently & in Team</div>
+      <div class="skill-item">Respect Workplace SOP & Rules</div>
+      <div class="skill-item">Verbal & Written Communication</div>
+      <div class="skill-item">Active Listening</div>
+      <div class="skill-item">Professional Attitude</div>
+      <div class="skill-item">Time Management</div>
+      <div class="skill-item">Problem Solving</div>
+      <div class="skill-item">Adaptability & Flexibility</div>
+      <div class="skill-item">Responsibility Taking</div>
+      <div class="skill-item">Task Prioritization</div>
+      <div class="skill-item">Basic Leadership Skills</div>
+      <div class="skill-item">Willingness to Learn & Grow</div>
+    </div>
+  </div>
+
+  <div class="card fade">
+    <h2>Skill Profesional di Bidang F&B</h2>
+    <div class="skill-grid-wide">
+      <div class="skill-item">Team Player with Leadership Mindset</div>
+      <div class="skill-item">Task Delegation & Scheduling</div>
+      <div class="skill-item">Problem Solving in Kitchen Operations</div>
+      <div class="skill-item">Conflict Handling & Communication</div>
+      <div class="skill-item">Performance Monitoring</div>
+      <div class="skill-item">Food Cost Analysis</div>
+      <div class="skill-item">Inventory & Purchasing Control</div>
+      <div class="skill-item">Vendor & Supplier Coordination</div>
+      <div class="skill-item">Daily Kitchen Report & Documentation</div>
+      <div class="skill-item">Basic F&B Accounting Knowledge</div>
+      <div class="skill-item">Understanding of Restaurant KPI</div>
+      <div class="skill-item">Food Safety & Hygiene (HACCP Basic)</div>
+      <div class="skill-item">Kitchen Hygiene & Sanitation</div>
+      <div class="skill-item">Waste Management & Cost Efficiency</div>
+      <div class="skill-item">Compliance with SOP & Company Standards</div>
+    </div>
+  </div>
+
+  <div class="card fade">
+    <h2>Pengalaman Kerja – Full Time</h2>
+    <h3>Resepsionis – Mitsubishi Motors (2023–2024)</h3>
+    <p>Bertanggung jawab dalam pelayanan pelanggan dan operasional front office, termasuk menerima tamu, mengelola komunikasi masuk, serta mendukung kelancaran administrasi harian. Terbiasa bekerja dengan standar pelayanan perusahaan, menjaga citra profesional, serta berkoordinasi dengan tim internal.</p>
+
+    <h3>ASM Staff Kitchen – Nasi Bebek Legendaris (2024–2025)</h3>
+    <p>Berperan aktif dalam membantu Assistant Store Manager dalam pengelolaan operasional dapur. Bertanggung jawab terhadap pengaturan jadwal kerja tim, pengawasan kualitas makanan, penerapan SOP dapur, serta pengendalian kebersihan dan efisiensi operasional.</p>
+
+    <h3>Senior Kitchen Staff – PT. Modular Kuliner Indonesia (Hangry!) (2025–2026)</h3>
+    <p>Menangani operasional dapur secara menyeluruh dengan fokus pada kualitas produk, efisiensi kerja, dan kepatuhan terhadap SOP perusahaan. Berperan dalam koordinasi tim kitchen, pengawasan food safety & hygiene, kontrol bahan baku, serta pelaporan operasional harian sesuai standar KPI perusahaan.</p>
+  </div>
+
+  <div class="card fade">
+    <h2>Pengalaman Kerja – Part Time & Freelance</h2>
+    <h3>Server – BS Arena Pool & Café</h3>
+    <p>Memberikan pelayanan kepada pelanggan dengan standar hospitality yang baik, menangani pesanan, menjaga kebersihan area kerja, serta berkoordinasi dengan tim.</p>
+
+    <h3>Quality Control – PT. Dunia Sandang Textil</h3>
+    <p>Melakukan pengecekan kualitas produk tekstil sesuai standar perusahaan dan membantu meminimalkan produk cacat.</p>
+
+    <h3>Freelance Graphic Design & Content Design</h3>
+    <p>Pembuatan desain grafis dan konten visual untuk promosi digital, media sosial, dan branding sesuai target audiens.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card fade">
+      <h2>Bahasa</h2>
+      <ul>
+        <li><strong>English</strong> – Able to communicate in basic English for daily conversations, including workplace interactions and simple professional communication.</li>
+        <li><strong>Mandarin（中文）</strong> – 具备基础日常会话能力，能够使用普通话进行基本沟通，并理解常见的日常交流内容。</li>
+        <li><strong>Arabic Fushah</strong> – متقن للغة العربية، مع قدرة على فهم النصوص الأدبية واللغوية، واستخدام اللغة في التواصل الشفهي والكتابي بشكل جيد.</li>
+      </ul>
+    </div>
+
+    <div class="card fade">
+      <h2>Sistem & Standar Kerja</h2>
+      <ul>
+        <li>Penerapan SOP Operasional F&B</li>
+        <li>Sistem kerja berbasis KPI</li>
+        <li>Daily & Weekly Operational Reporting</li>
+        <li>Inventory & Purchasing Control System</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card fade">
+      <h2>Gaya & Etos Kerja</h2>
+      <p>Berorientasi pada hasil, disiplin, bertanggung jawab, mampu bekerja di bawah tekanan, serta terbiasa memimpin dan berkoordinasi dengan tim operasional.</p>
+    </div>
+
+    <div class="card fade">
+      <h2>Kesiapan Kerja</h2>
+      <p>Siap bekerja dengan sistem shift, target operasional, dan adaptif terhadap perubahan kebutuhan perusahaan.</p>
+    </div>
+  </div>
+
+  <div class="card fade">
+    <h2>Posisi yang Dituju</h2>
+    <ul>
+      <li>Senior Staff Operasional / Senior Kitchen Staff</li>
+      <li>Operational Excellence / Area Support</li>
+      <li>Production Supervisor (Central Kitchen / Cloud Kitchen)</li>
+      <li>Training & Development Staff (Operasional)</li>
+      <li>Franchise Operations Support</li>
+      <li>Assistant Store Manager (ASM)</li>
+      <li>Operational Support / Operational Staff (HO)</li>
+    </ul>
+  </div>
+
+  <div class="card fade">
+    <h2>Kontak</h2>
+    <p><strong>Ach Mutohar</strong></p>
+    <p>Jl. Sukamanah, Kebon Jeruk, Andir, Kota Bandung (40181)</p>
+    <p>📱 083107035753</p>
+    <p>✉️ achmutohar10@gmail.com</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ach Mutohar · Professional Personal Website</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+</script>
+
+<style>
+.profile-photo{
+  position:relative;
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  padding:4px;
+  background:linear-gradient(135deg,#2f3b52,#6b7da6);
+  box-shadow:0 20px 40px rgba(0,0,0,0.18);
+  animation:photoFadeIn 1s ease-out forwards;
+}
+
+.profile-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+  filter:grayscale(100%);
+  transition:filter .6s ease, transform .6s ease;
+}
+
+.profile-photo:hover img{
+  filter:grayscale(0%);
+  transform:scale(1.03);
+}
+
+@keyframes photoFadeIn{
+  from{opacity:0; transform:translateY(14px)}
+  to{opacity:1; transform:translateY(0)}
+}
+.profile-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+  background:#fff;
+}
+@media(max-width:640px){
+  .profile-photo{width:120px;height:120px}
+}
+.fade{opacity:0;transform:translateY(24px);transition:all .8s ease}
+.fade.show{opacity:1;transform:none}
+</style>
+</body>
+</html>
